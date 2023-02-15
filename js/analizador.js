@@ -27,6 +27,10 @@ for (var i in array) {
     else if (/(for|while|if|true|false|else|case|break)/.test(array[i])) {
         resultado.innerHTML = resultado.innerHTML + array[i] + " es una palabra reservada\n";
     }
+    } else if (/^[a-z][a-z0-9]*$/.test(array[i])) {
+        resultado.innerHTML = resultado.innerHTML + array[i] + " es una variable\n";
+    }
+
 
 
 
